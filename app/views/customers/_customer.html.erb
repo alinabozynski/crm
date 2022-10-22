@@ -1,0 +1,15 @@
+<header>
+  <h1>Customers</h1>
+  <h3>Ordered lists: <%= link_to 'General List', customers_path %> <%= link_to 'Alphabetized', customers_alphabetized_path %> <%= link_to 'Missing Emails', customers_missing_email_path %></h3>
+</header>
+<section>
+  <% @customers.each do |customer| %>
+    <div class="customer">
+      <h2><%= customer.full_name %></h2>
+      <p><%= image_tag(url_for(customer.image), style: 'height:20vw;width:18vw') %></p>
+      <p><strong>Phone Number:</strong> <%= customer.phone_number %></p>
+      <p><strong>Email:</strong> <%= customer.email_address %></p>
+      <p><strong>Notes:</strong> <%= customer.notes %></p>
+    </div>
+  <% end %>
+</section>
