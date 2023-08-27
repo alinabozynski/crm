@@ -20,7 +20,7 @@ Note: No data will be displayed when run, as customer data is added through Admi
 
 ## To Run this Application
 
-Run in Windows Subsystem for Linux (Ubuntu) 
+Run in Windows Subsystem for Linux (Ubuntu) with Ruby on Rails and rbenv installed.
 
 Clone repository in WSL.
 
